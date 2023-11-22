@@ -19,22 +19,22 @@
   <body>
 
     <header> <!-- Inicio cabeçalho -->
-      <nav class="navbar navbar-expand-sm navbar-light bg-warning">
+      <nav class="navbar navbar-expand-sm navbar-light bg-warning"> <!-- Cria uma barra de navegação que fica miniazada no tamanho de tela médio -->
         <div class="container">
 
-            <a href="#" class="navbar-brand">
+            <a href="#" class="navbar-brand"> <!-- Informa que esta é a logo da navbar -->
               <img src="img/logo.png" alt="" width="142">
             </a>
 
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal"> <!-- Cria o botão para abrir o menu minimizado -->
+              <span class="navbar-toggler-icon"></span> <!-- Define o ícone do botão para abrir o menu minimizado -->
             </button>
 
-            <div class="collapse navbar-collapse" id="nav-principal">
+            <div class="collapse navbar-collapse" id="nav-principal"> <!-- Define a navbar como um item que deve minimizar em pequenas telas -->
               <ul class="navbar-nav ml-auto">
 
-                <li class="nav-item">
-                  <a href="" class="nav-link">Home</a>
+                <li class="nav-item"> <!-- Cria um espaçameto para os itens da nav -->
+                  <a href="" class="nav-link">Home</a> <!-- Informa que este é um link clicavel da nav -->
                 </li>
             
                 <li class="nav-item">
@@ -60,19 +60,129 @@
       </nav>
     </header> <!-- Fim cabeçalho -->
 
-    <section id="home">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            texto
+    <section id="home"> <!-- Inicio HOME -->
+      <div class="container"> <!-- Container cria um espaçamento de controle para a div, é necessário para utilizar o grid-->
+        <div class="row"> <!-- Define uma linha da grid, ou seja, tudo que está aqui faz parte de uma linha que só será quebrada caso as linhas se quebrem -->
+          <div class="col-md-6 d-flex"> <!-- col-md-6 diz que a coluna ocupa 6 dos 12 espaços do grid, d-flex deixa o display flexivel -->
+            <div class="align-self-center"> <!-- Alinha a div inteira ao centro vertical da tela -->
+              <h1 class="display-4"> <!-- Deixa as letras mais finas e num tamanho maior -->
+                Suas contas descomplicadas!
+              </h1>
+              <p>
+                Usado por mais de um milhão de pessoas, o Finans é uma ferramenta online que vai facilitar sua vida financeira.
+              </p>
+              <form class="mt-4 mb-4"> <!-- Margin top 4 e Margin bottom 4 -->
+                <div class="input-group"> <!-- Diz que tudo dentro da div faz parte do mesmo input -->
+                  <input type="text" placeholder="seu email" class="form-control"> <!-- Passa uma formatação ao input -->
+                  <div class="input-group-append"> <!-- Cria um anexo integrado ao input -->
+                    <button type="button" class="btn btn-primary">Cadastre-se</button> <!-- Define o anexo como um botão -->
+                  </div>
+                </div>
+              </form>
+              <p>
+                Disponível para <a href="" class="btn btn-outline-light"><!-- Cria um botão claro apenas com o contorno --><i class="fa-brands fa-android fa-lg"><!-- Cria um icone com o font awesome --></i></a>
+                <a href="" class="btn btn-outline-light"><i class="fa-brands fa-apple fa-lg"></i></a>
+              </p>
+            </div>
           </div>
-          <div class="col-md-6">
-            <img src="" alt="">
+          <div class="col-md-6 d-none d-md-block">
+            <img src="img/capa-mulher.png" alt="">
           </div>
         </div>
       </div>
-    </section>
+    </section> <!-- Fim Home -->
 
+    <section class="caixa"> <!-- Inicio seção saiba --> 
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex">
+            <div class="align-self-center">
+              <h2>Saiba para onde vai o seu dinheiro.</h2>
+              <p>
+                Com o Finans, você categoriza todos os seus lançamentos. Com gráficos simples, você sabe de onde vem e para onde vai seu dinheiro.
+              </p>
+              <a href="" class="btn btn-primary">Veja mais</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="img/saiba.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </section> <!-- Fim seção saiba -->
+
+    <section class="caixa"> <!-- Inicio seção juros --> 
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/juros.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-6 d-flex">
+            <div class="align-self-center">
+              <h2>Pare de pagar juros e economize.</h2>
+              <p>
+                Manter as contas em dia é sempre um problema? O Finans avisa para você: receba alertas de contas a pagar e a receber!
+              </p>
+              <a href="" class="btn btn-primary">Veja mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- Fim seção juros -->
+
+    <section class="caixa"> <!-- Inicio seção juros --> 
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/facil.png" alt="" class="img-fluid">
+            <h4>Fácil de usar</h4>
+            <p>
+              O Finans vai além do básico e permite que você faça controles incríveis, essenciais para suas finanças. Simples como tem que ser!
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="img/economize.png" alt="" class="img-fluid">
+            <h4>Economize seu tempo</h4>
+            <p>
+              Tempo é dinheiro! Em segundos, você tem tudo sob controle para aproveitar seu tempo com o que realemente importa para você.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="img/suporte.png" alt="" class="img-fluid">
+            <h4>Suporte amigo</h4>
+            <p>
+              Dúvidas? Perguntas? Nosso suporte super legal ajuda você! Estamos aqui para resolver sues problemas e deixar sua vida mais fácil.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> <!-- Fim seção juros -->
+
+    <footer class="mt-4 mb-4"> <!-- Inicio rodape -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <p>
+              <a href="">Home</a>
+              <a href="">Recursos</a>
+              <a href="">Beneficios</a>
+              <a href="">Preços</a>
+            </p>
+          </div>
+          <div class="col-md-4 d-flex justify-content-end">
+            <a href="" class="btn btn-outline-dark ml-2">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="" class="btn btn-outline-dark ml-2">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="" class="btn btn-outline-dark ml-2">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer> <!-- Fim rodape -->
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
